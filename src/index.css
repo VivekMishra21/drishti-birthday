@@ -25,6 +25,8 @@ html {
 
   width: 100%;
   min-height: 100%;
+  color-scheme: light;
+  background: #fff8f3;
 
   scroll-behavior: smooth;
 }
