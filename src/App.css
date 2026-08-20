@@ -213,8 +213,12 @@ section {
    ========================================================= */
 
 .surprise-intro {
-  position: fixed;
-  inset: 0;
+  position: relative;
+
+  min-height: 100vh;
+  min-height: 100svh;
+
+  padding: 24px 20px;
 
   z-index: 9999;
 
@@ -4125,7 +4129,11 @@ section {
   z-index: 9000;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  /* Allow the opening screen to scroll on any viewport if its content needs it. */
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   pointer-events: none;
   background: radial-gradient(circle at center, rgba(255, 250, 253, 0.62), rgba(255, 205, 230, 0.24) 42%, rgba(253, 173, 213, 0.08) 72%);
   animation: celebrationFade 2.6s ease forwards;

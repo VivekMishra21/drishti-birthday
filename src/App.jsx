@@ -732,7 +732,7 @@ export default function App() {
         className="content-section"
       >
         <header>
-          <p className="section-kicker">📸 SNAPSHOTS OF US</p>
+          <p className="section-kicker"> SNAPSHOTS OF US</p>
           <h2>Beautiful memories</h2>
           <p className="section-subtitle">
             Little moments that became big memories. 💕
@@ -783,7 +783,7 @@ export default function App() {
                 <p>
                   {
                     [
-                      "Our very first fight — followed by a dramatic block and unblock.",
+                      "Our very first fight followed by a dramatic block and unblock.",
                       "The first time I saw you, and knew we would cause good chaos.",
                       "Third Wave coffee hit different. We laughed at everything.",
                       "Every moment I've spent with you has been special to me, and I’ll always want to keep all these beautiful memories close to my heart. ❤️",
