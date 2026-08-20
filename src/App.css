@@ -4543,6 +4543,195 @@ section {
 
 
 /* Gift icon beside the birthday name — replaces the old cake emoji. */
+.brown-teddy {
+  position: relative;
+  display: inline-block;
+  width: 0.92em;
+  height: 0.82em;
+  margin-left: 0.12em;
+  vertical-align: -0.06em;
+  filter: drop-shadow(0 0.08em 0.06em rgba(91, 47, 28, 0.22));
+}
+
+.brown-teddy-ear,
+.brown-teddy-face,
+.brown-teddy-eye,
+.brown-teddy-muzzle {
+  position: absolute;
+  display: block;
+}
+
+.brown-teddy-ear {
+  top: 0;
+  width: 0.36em;
+  height: 0.36em;
+  border-radius: 50%;
+  background: #8b4d2d;
+}
+
+.brown-teddy-ear::after {
+  position: absolute;
+  inset: 0.09em;
+  border-radius: inherit;
+  background: #c9875c;
+  content: "";
+}
+
+.brown-teddy-ear-left { left: 0.05em; }
+.brown-teddy-ear-right { right: 0.05em; }
+
+.brown-teddy-face {
+  z-index: 1;
+  left: 0.11em;
+  bottom: 0;
+  width: 0.7em;
+  height: 0.66em;
+  border-radius: 48% 48% 44% 44%;
+  background: linear-gradient(135deg, #b96f42, #824426);
+}
+
+.brown-teddy-eye {
+  top: 0.25em;
+  width: 0.065em;
+  height: 0.08em;
+  border-radius: 50%;
+  background: #382014;
+}
+
+.brown-teddy-eye-left { left: 0.18em; }
+.brown-teddy-eye-right { right: 0.18em; }
+
+.brown-teddy-muzzle {
+  left: 50%;
+  bottom: 0.1em;
+  width: 0.26em;
+  height: 0.2em;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: #f3c6a0;
+}
+
+.brown-teddy-muzzle::before {
+  position: absolute;
+  left: 50%;
+  top: 0.02em;
+  width: 0.08em;
+  height: 0.06em;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: #382014;
+  content: "";
+}
+
+.brown-teddy {
+  width: 1.18em;
+  height: 1.45em;
+  margin-left: 0.14em;
+  vertical-align: -0.24em;
+  font-size: 0.58em;
+}
+
+.brown-teddy-ear {
+  z-index: 1;
+  top: 0.09em;
+  width: 0.43em;
+  height: 0.43em;
+  background: #7a3f25;
+}
+
+.brown-teddy-face {
+  z-index: 2;
+  left: 0.16em;
+  bottom: 0.6em;
+  width: 0.86em;
+  height: 0.77em;
+  border: 0.035em solid #713719;
+  border-radius: 48% 48% 44% 44%;
+  background: radial-gradient(circle at 34% 25%, #d8935e 0 7%, transparent 8%),
+    linear-gradient(135deg, #c47b48, #8a4828 72%);
+  box-shadow: inset -0.07em -0.06em 0 rgba(83, 40, 20, 0.2);
+}
+
+.brown-teddy-eye {
+  z-index: 1;
+  top: 0.29em;
+  width: 0.075em;
+  height: 0.095em;
+  background: #27140c;
+}
+
+.brown-teddy-eye-left { left: 0.22em; }
+.brown-teddy-eye-right { right: 0.22em; }
+
+.brown-teddy-muzzle {
+  bottom: 0.12em;
+  width: 0.32em;
+  height: 0.23em;
+  border: 0.02em solid #a96542;
+  background: #f0c19a;
+}
+
+.brown-teddy-body,
+.brown-teddy-paw,
+.brown-teddy-foot {
+  position: absolute;
+  display: block;
+  background: linear-gradient(135deg, #bd7041, #803e22 78%);
+}
+
+.brown-teddy-body {
+  z-index: 1;
+  left: 0.22em;
+  bottom: 0.13em;
+  width: 0.74em;
+  height: 0.64em;
+  border: 0.035em solid #713719;
+  border-radius: 46% 46% 38% 38%;
+}
+
+.brown-teddy-heart {
+  position: absolute;
+  top: 0.08em;
+  left: 50%;
+  color: #f8dce2;
+  font-family: Arial, sans-serif;
+  font-size: 0.3em;
+  line-height: 1;
+  transform: translateX(-50%);
+  text-shadow: 0 0.025em 0 #a74d65;
+}
+
+.brown-teddy-paw {
+  z-index: 0;
+  top: 0.76em;
+  width: 0.31em;
+  height: 0.47em;
+  border: 0.035em solid #713719;
+  border-radius: 50%;
+}
+
+.brown-teddy-paw-left {
+  left: 0.08em;
+  transform: rotate(24deg);
+}
+
+.brown-teddy-paw-right {
+  right: 0.08em;
+  transform: rotate(-24deg);
+}
+
+.brown-teddy-foot {
+  z-index: 2;
+  bottom: 0;
+  width: 0.42em;
+  height: 0.28em;
+  border: 0.035em solid #713719;
+  border-radius: 50% 50% 42% 42%;
+}
+
+.brown-teddy-foot-left { left: 0.12em; }
+.brown-teddy-foot-right { right: 0.12em; }
+
 .birthday-title h1 .birthday-name {
   display: inline;
 }

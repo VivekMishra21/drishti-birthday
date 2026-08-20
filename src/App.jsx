@@ -30,21 +30,19 @@ const CONFIG = {
   birthdayDate: new Date("2026-08-21T00:00:00"),
   heroLine:
     "Today isn't just another day — it's a celebration of the beautiful person you are.",
- message: [
-  "From our very first fight the block, unblock, and everything in between to these two beautiful months filled with chaos, laughter, random plans, and countless little moments, I honestly wouldn't trade a single bit of it.",
+  message: [
+    "From our very first fight the block, unblock, and everything in between to these two beautiful months filled with chaos, laughter, random plans, and countless little moments, I honestly wouldn't trade a single bit of it.",
 
-  "You're that special person who has a way of making ordinary days feel a little more special, and somehow making the difficult ones feel a little lighter just by being around.",
+    "You're that special person who has a way of making ordinary days feel a little more special, and somehow making the difficult ones feel a little lighter just by being around.",
 
-  "From our random conversations and spontaneous plans to all the laughs and little moments we've shared, every bit of it has become a memory I'll always smile about.",
+    "From our random conversations and spontaneous plans to all the laughs and little moments we've shared, every bit of it has become a memory I'll always smile about.",
 
-  "I'm genuinely glad that all these moments happened with you, and I'm even more grateful for the person you are.",
+    "I'm genuinely glad that all these moments happened with you, and I'm even more grateful for the person you are.",
 
-  "I hope this birthday brings you closer to everything you're dreaming of and gives you countless reasons to smile. You deserve all the happiness, love, and beautiful things life has to offer.",
+    "I hope this birthday brings you closer to everything you're dreaming of and gives you countless reasons to smile. You deserve all the happiness, love, and beautiful things life has to offer.",
 
-  "Happy Birthday Drishti. ❤️ Here's to many more laughs, endless conversations, crazy plans, and beautiful memories together.",
-
- 
-],
+    "Happy Birthday Drishti 🧸❤️ Here's to many more laughs, endless conversations, crazy plans, and beautiful memories together.",
+  ],
   memories: [
     {
       title: "Our first day at Chaayos",
@@ -497,7 +495,7 @@ export default function App() {
             <h1>
               Happy Birthday
               <br />
-              <span className="birthday-name">{CONFIG.name}</span>
+              <span className="birthday-name">{CONFIG.name} 🧸</span>
               <span
                 className="title-gift"
                 aria-label="A gift box opening to reveal a soft toy"
@@ -639,7 +637,7 @@ export default function App() {
         <div className="hero-card">
           <div className="hero-crown">♡ ✦ ♡ ✦ ♡</div>
           <p className="eyebrow">✨ HAPPY BIRTHDAY ✨</p>
-          <h1>{CONFIG.name}</h1>
+          <h1>{CONFIG.name} 🧸</h1>
           <div className="hero-underline">🌷 💗 🌷</div>
           <p className="hero-to">To someone genuinely wonderful</p>
           <p className="hero-line">{CONFIG.heroLine}</p>
@@ -958,7 +956,7 @@ export default function App() {
         <h2>
           Happy Birthday,
           <br />
-          Once Again! 💕
+          Once Again! 🧸 💕
         </h2>
         <p>May your smile stay just as bright as the memories you make.</p>
         <strong>
