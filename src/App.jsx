@@ -29,7 +29,7 @@ const CONFIG = {
   name: "Drishti",
   birthdayDate: new Date("2026-08-21T00:00:00"),
   heroLine:
-    "Today isn't just another day — it's a celebration of the beautiful person you are.",
+    "Today isn't just another day it's a celebration of the beautiful person you are.",
   message: [
     "From our very first fight the block, unblock, and everything in between to these two beautiful months filled with chaos, laughter, random plans, and countless little moments, I honestly wouldn't trade a single bit of it.",
 
