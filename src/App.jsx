@@ -395,7 +395,7 @@ export default function App() {
             </div>
           </button>
           <p className="gift-hello">
-            <strong>Heyyy, Birthday Girl! 🎀</strong>
+      
             <br />
             <small>Tap the little gift to begin</small>
           </p>
