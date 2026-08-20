@@ -4127,8 +4127,18 @@ section {
   place-items: center;
   overflow: hidden;
   pointer-events: none;
-  background: radial-gradient(circle at center, rgba(255, 244, 251, 0.35), rgba(255, 205, 230, 0.16) 42%, transparent 72%);
+  background: radial-gradient(circle at center, rgba(255, 250, 253, 0.62), rgba(255, 205, 230, 0.24) 42%, rgba(253, 173, 213, 0.08) 72%);
   animation: celebrationFade 2.6s ease forwards;
+}
+
+.celebration-overlay::before {
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.72), rgba(255, 209, 232, 0.22) 42%, transparent 70%);
+  filter: blur(18px);
+  content: "";
+  animation: celebrationGlow 2.6s ease-out both;
 }
 
 .celebration-message {
@@ -4179,11 +4189,14 @@ section {
 .celebration-flowers span {
   position: absolute;
   z-index: 2;
-  left: calc(2% + var(--i) * 6.45%);
-  top: -12%;
-  font-size: clamp(1.6rem, 3.4vw, 3.1rem);
-  animation: flowerConfetti 2.45s cubic-bezier(0.16, 0.75, 0.25, 1) forwards;
-  animation-delay: calc(var(--i) * 0.065s);
+  left: var(--x);
+  top: -11vh;
+  font-size: clamp(1.7rem, 3.5vw, 3.25rem);
+  line-height: 1;
+  opacity: 0;
+  filter: drop-shadow(0 7px 5px rgba(151, 63, 105, 0.18));
+  will-change: transform, opacity;
+  animation: flowerConfetti var(--duration) cubic-bezier(0.22, 0.61, 0.36, 1) var(--delay) both;
 }
 
 .celebration-fireworks span {
@@ -4204,6 +4217,12 @@ section {
   100% { opacity: 0; }
 }
 
+@keyframes celebrationGlow {
+  0% { opacity: 0; transform: scale(0.55); }
+  35% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 0; transform: scale(1.25); }
+}
+
 @keyframes celebrationMessage {
   0% { opacity: 0; transform: scale(0.35) translateY(30px); }
   55% { opacity: 1; transform: scale(1.08) translateY(0); }
@@ -4218,9 +4237,11 @@ section {
 }
 
 @keyframes flowerConfetti {
-  0% { opacity: 0; transform: translateY(0) rotate(0deg) scale(0.5); }
-  14% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(118vh) translateX(calc((var(--i) - 7.5) * 24px)) rotate(540deg) scale(1.1); }
+  0% { opacity: 0; transform: translate3d(0, -8vh, 0) rotate(-18deg) scale(calc(var(--scale) * 0.55)); }
+  10% { opacity: 1; }
+  42% { transform: translate3d(calc(var(--drift) * -0.35), 43vh, 0) rotate(155deg) scale(var(--scale)); }
+  68% { opacity: 1; transform: translate3d(var(--drift), 74vh, 0) rotate(285deg) scale(calc(var(--scale) * 0.94)); }
+  100% { opacity: 0; transform: translate3d(calc(var(--drift) * 0.68), 118vh, 0) rotate(470deg) scale(calc(var(--scale) * 0.72)); }
 }
 
 @keyframes fireworkBurst {
