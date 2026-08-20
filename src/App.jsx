@@ -878,24 +878,49 @@ export default function App() {
               <p className="letter-small">A little letter for you 💌</p>
               <h3>Dear {CONFIG.name},</h3>
               <div className="letter-line" />
+
               <p>
-                If I could wrap up every good memory, every laugh, every silly
-                conversation, and every little moment we've shared, I would put
-                all of them in this box.
+                If I had to put everything I feel into words, I honestly don't
+                know where I would start. Some people just come into our lives
+                unexpectedly, and somehow, without even realizing it, they
+                become a beautiful part of our everyday life.
               </p>
+
               <p>
-                These past two months have been full of unexpected chaos, random
-                plans, fights, laughs, food, coffee and memories that somehow
-                became really special.
+                These past two months have been a little crazy random plans,
+                endless conversations, stupid fights, unexpected laughs, food,
+                coffee, and so many little moments that I never thought would
+                become this special.
               </p>
+
               <p>
-                And honestly, I'm really glad that all those little moments
-                happened with you.
+                And maybe that's what makes it beautiful. It wasn't anything
+                grand or planned. It was simply the little things the
+                conversations that lasted longer than they should, the random
+                moments that made us laugh, and the memories that I know I'll
+                look back on with a smile.
               </p>
+
               <p>
-                So on your birthday, I hope you know that you deserve every
-                beautiful thing life has waiting for you.
+                I'm genuinely grateful that I got to share all of those moments
+                with you. You have unknowingly made these days a little happier,
+                a little crazier, and definitely a lot more memorable.
               </p>
+
+              <p>
+                So today, on your birthday, I just want to wish you all the
+                happiness you deserve. I hope life gives you countless reasons
+                to smile, people who always choose you, dreams that come true,
+                and moments that make your heart genuinely happy.
+              </p>
+
+              <p>
+                And wherever life takes us from here, I hope these little
+                memories always remain something worth smiling about.
+              </p>
+
+              <p>Happy Birthday. ❤️ I'm really, really glad I met you.</p>
+
               <p className="final-message">
                 May you always have a reason to smile. ❤️
               </p>
@@ -956,7 +981,7 @@ export default function App() {
         <h2>
           Happy Birthday,
           <br />
-          Once Again! 🧸 💕
+          Once Again 🧸 💕
         </h2>
         <p>May your smile stay just as bright as the memories you make.</p>
         <strong>
