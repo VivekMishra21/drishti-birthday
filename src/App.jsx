@@ -547,7 +547,10 @@ export default function App() {
             ))}
           </div>
           <div className="celebration-flowers">
-            {["🌸", "🌷", "🌼", "💐", "🌺", "🌸", "🌷", "🌼"].map(
+            {[
+              "🌸", "🌷", "🌼", "💐", "🌺", "🌸", "🌷", "🌼",
+              "🌹", "🌸", "🌺", "🌷", "🌼", "💐", "🌸", "🌹",
+            ].map(
               (flower, i) => (
                 <span key={i} style={{ "--i": i }}>
                   {flower}
@@ -555,7 +558,13 @@ export default function App() {
               ),
             )}
           </div>
-          <div className="celebration-princess">👸</div>
+          <div className="celebration-birds">
+            {["🕊️", "🕊️", "🕊️", "🕊️", "🕊️", "🕊️"].map((bird, i) => (
+              <span key={i} style={{ "--i": i }}>
+                {bird}
+              </span>
+            ))}
+          </div>
           <div className="celebration-message">
             <span>✨</span>
             <strong>Let the celebration begin!</strong>

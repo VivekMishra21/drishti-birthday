@@ -4165,24 +4165,25 @@ section {
   text-transform: uppercase;
 }
 
-.celebration-princess {
+.celebration-birds span {
   position: absolute;
   z-index: 4;
-  left: 50%;
-  top: calc(50% - 128px);
-  font-size: clamp(4.5rem, 10vw, 7.5rem);
-  filter: drop-shadow(0 14px 12px rgba(163, 58, 113, 0.23));
-  animation: princessEntrance 1.25s cubic-bezier(0.18, 0.9, 0.28, 1.25) both, princessWave 0.85s 1.25s ease-in-out 2;
+  left: -14vw;
+  top: calc(18% + var(--i) * 9%);
+  font-size: clamp(1.7rem, 3.6vw, 3.4rem);
+  filter: drop-shadow(0 5px 5px rgba(111, 77, 123, 0.2));
+  animation: birdFlyAcross 2.25s cubic-bezier(0.2, 0.72, 0.36, 1) forwards;
+  animation-delay: calc(var(--i) * 0.16s);
 }
 
 .celebration-flowers span {
   position: absolute;
   z-index: 2;
-  left: calc(8% + var(--i) * 12%);
-  top: 105%;
-  font-size: clamp(2rem, 4vw, 3.6rem);
-  animation: flowerConfetti 2.35s cubic-bezier(0.16, 0.75, 0.25, 1) forwards;
-  animation-delay: calc(var(--i) * 0.08s);
+  left: calc(2% + var(--i) * 6.45%);
+  top: -12%;
+  font-size: clamp(1.6rem, 3.4vw, 3.1rem);
+  animation: flowerConfetti 2.45s cubic-bezier(0.16, 0.75, 0.25, 1) forwards;
+  animation-delay: calc(var(--i) * 0.065s);
 }
 
 .celebration-fireworks span {
@@ -4209,21 +4210,17 @@ section {
   100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
-@keyframes princessEntrance {
-  0% { opacity: 0; transform: translate(-50%, 130px) scale(0.25) rotate(-16deg); }
-  72% { opacity: 1; transform: translate(-50%, 0) scale(1.1) rotate(5deg); }
-  100% { opacity: 1; transform: translate(-50%, 0) scale(1) rotate(0); }
-}
-
-@keyframes princessWave {
-  0%, 100% { transform: translate(-50%, 0) rotate(-4deg); }
-  50% { transform: translate(-50%, -10px) rotate(5deg); }
+@keyframes birdFlyAcross {
+  0% { opacity: 0; transform: translate(-10vw, 24px) scale(0.65) rotate(-8deg); }
+  15% { opacity: 1; }
+  48% { transform: translate(54vw, -26px) scale(1) rotate(7deg); }
+  100% { opacity: 0; transform: translate(124vw, -68px) scale(0.78) rotate(-5deg); }
 }
 
 @keyframes flowerConfetti {
-  0% { opacity: 0; transform: translateY(0) rotate(0deg) scale(0.4); }
-  18% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(-115vh) translateX(calc((var(--i) - 3.5) * 45px)) rotate(360deg) scale(1.2); }
+  0% { opacity: 0; transform: translateY(0) rotate(0deg) scale(0.5); }
+  14% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(118vh) translateX(calc((var(--i) - 7.5) * 24px)) rotate(540deg) scale(1.1); }
 }
 
 @keyframes fireworkBurst {
