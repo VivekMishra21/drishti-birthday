@@ -45,3 +45,14 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
+/* Keep the birthday design light even when the device prefers dark mode. */
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  #root {
+    color-scheme: only light;
+    color: #3a2e4d;
+    background: #fff8f3;
+  }
+}
